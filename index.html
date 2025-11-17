@@ -1,46 +1,92 @@
-
-v<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Landing Page</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page Profissional</title>
+
+  <!-- Bootstrap (CDN) -->
+  <link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./assets/css/custom.css">
 </head>
+
 <body>
 
-  <header class="hero">
-    <nav class="navbar">
-      <h1 class="logo">MinhaMarca</h1>
-      <a href="#cta" class="btn">Começar</a>
-    </nav>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 py-3 fixed-top shadow-sm">
+    <a class="navbar-brand fw-bold" href="#">MinhaMarca</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-    <div class="hero-content">
-      <h2>Transforme sua ideia em realidade</h2>
-      <p>Sua nova landing page simples, moderna e responsiva.</p>
-      <a id="cta" href="#" class="btn-primary">Quero saber mais</a>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto gap-3">
+        <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+        <li class="nav-item"><a class="nav-link" href="#recursos">Recursos</a></li>
+        <li class="nav-item"><a class="btn btn-outline-light btn-sm" href="#cta">Começar</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero d-flex align-items-center text-center text-white">
+    <div class="container">
+      <h1 class="display-4 fw-bold">Transforme sua Ideia em Realidade</h1>
+      <p class="lead mt-3">Uma landing page moderna, responsiva e otimizada.</p>
+      <a href="#cta" class="btn btn-light btn-lg mt-4">Quero saber mais</a>
     </div>
   </header>
 
-  <section class="features">
-    <div class="feature">
-      <h3>🚀 Rápido</h3>
-      <p>Carregamento otimizado com HTML, CSS e JS puro.</p>
-    </div>
-    <div class="feature">
-      <h3>🎨 Personalizável</h3>
-      <p>Alterar cores e layout é extremamente simples.</p>
-    </div>
-    <div class="feature">
-      <h3>📱 Responsivo</h3>
-      <p>Design adaptado para qualquer dispositivo.</p>
+  <!-- SEÇÃO RECURSOS -->
+  <section id="recursos" class="py-5">
+    <div class="container text-center">
+      <h2 class="fw-bold mb-4">Recursos Principais</h2>
+      
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card shadow-sm feature-card">
+            <div class="card-body">
+              <h5 class="card-title">🚀 Rápido</h5>
+              <p class="card-text">Otimizado para carregamento rápido e performance.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card shadow-sm feature-card">
+            <div class="card-body">
+              <h5 class="card-title">🎨 Personalizável</h5>
+              <p class="card-text">Cores, fontes e layout facilmente ajustáveis.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card shadow-sm feature-card">
+            <div class="card-body">
+              <h5 class="card-title">📱 Responsivo</h5>
+              <p class="card-text">Compatível com todos os dispositivos.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
   </section>
 
-  <footer>
-    <p>© 2025 MinhaMarca — Todos os direitos reservados.</p>
+  <!-- FOOTER -->
+  <footer class="text-center text-white py-3 bg-dark">
+    <p class="mb-0">© 2025 MinhaMarca — Todos os direitos reservados.</p>
   </footer>
 
-  <script src="script.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom JS -->
+  <script src="./assets/js/script.js"></script>
 </body>
 </html>
