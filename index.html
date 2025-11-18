@@ -5,15 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Landing Page Profissional</title>
 
-  <!-- Bootstrap (CDN) -->
-  <link 
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
-    rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 
   <!-- Custom CSS -->
   <link rel="stylesheet" href="./assets/css/custom.css">
-</head>
 
+</head>
 <body>
 
   <!-- NAVBAR -->
@@ -27,31 +28,35 @@
       <ul class="navbar-nav ms-auto gap-3">
         <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
         <li class="nav-item"><a class="nav-link" href="#recursos">Recursos</a></li>
-        <li class="nav-item"><a class="btn btn-outline-light btn-sm" href="#cta">Começar</a></li>
+        <li class="nav-item"><a class="nav-link" href="#time">Time</a></li>
+        <li class="nav-item"><a class="btn btn-outline-light btn-sm" href="#contato">Contato</a></li>
       </ul>
     </div>
   </nav>
+
 
   <!-- HERO -->
   <header class="hero d-flex align-items-center text-center text-white">
     <div class="container">
       <h1 class="display-4 fw-bold">Transforme sua Ideia em Realidade</h1>
-      <p class="lead mt-3">Uma landing page moderna, responsiva e otimizada.</p>
-      <a href="#cta" class="btn btn-light btn-lg mt-4">Quero saber mais</a>
+      <p class="lead mt-3">Uma landing page moderna, responsiva e otimizada com Bootstrap.</p>
+      <a href="#recursos" class="btn btn-light btn-lg mt-4">Quero saber mais</a>
     </div>
   </header>
+
 
   <!-- SEÇÃO RECURSOS -->
   <section id="recursos" class="py-5">
     <div class="container text-center">
       <h2 class="fw-bold mb-4">Recursos Principais</h2>
-      
+
       <div class="row g-4">
+
         <div class="col-md-4">
           <div class="card shadow-sm feature-card">
             <div class="card-body">
               <h5 class="card-title">🚀 Rápido</h5>
-              <p class="card-text">Otimizado para carregamento rápido e performance.</p>
+              <p class="card-text">Otimizado para carregamento rápido e performance máxima.</p>
             </div>
           </div>
         </div>
@@ -60,7 +65,7 @@
           <div class="card shadow-sm feature-card">
             <div class="card-body">
               <h5 class="card-title">🎨 Personalizável</h5>
-              <p class="card-text">Cores, fontes e layout facilmente ajustáveis.</p>
+              <p class="card-text">Cores, fontes e layout facilmente ajustáveis para seu projeto.</p>
             </div>
           </div>
         </div>
@@ -69,24 +74,146 @@
           <div class="card shadow-sm feature-card">
             <div class="card-body">
               <h5 class="card-title">📱 Responsivo</h5>
-              <p class="card-text">Compatível com todos os dispositivos.</p>
+              <p class="card-text">Compatível com qualquer dispositivo mobile, tablet ou desktop.</p>
             </div>
           </div>
         </div>
+
       </div>
 
     </div>
   </section>
 
-  <!-- FOOTER -->
-  <footer class="text-center text-white py-3 bg-dark">
-    <p class="mb-0">© 2025 MinhaMarca — Todos os direitos reservados.</p>
+
+  <!-- SEÇÃO TIME -->
+  <section id="time" class="py-5">
+    <div class="container text-center">
+      <h2 class="fw-bold mb-4">Nosso Time</h2>
+
+      <div class="row g-4">
+
+        <div class="col-md-4">
+          <div class="card border-0 shadow-sm team-card">
+            <img src="./assets/images/user1.jpg" class="card-img-top" alt="Membro 1">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Teocrito Soares</h5>
+              <p class="card-text text-muted">Designer UI/UX</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card border-0 shadow-sm team-card">
+            <img src="./assets/images/user2.jpg" class="card-img-top" alt="Membro 2">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Dinalva Muniz</h5>
+              <p class="card-text text-muted">Desenvolvedor Front-end</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card border-0 shadow-sm team-card">
+            <img src="./assets/images/user3.jpg" class="card-img-top" alt="Membro 3">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Wendel Santos</h5>
+              <p class="card-text text-muted">Gerente de Projetos</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+
+  <!-- SEÇÃO DE CONTATO -->
+  <section id="contato" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="fw-bold text-center mb-4">Entre em Contato</h2>
+
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+
+          <form class="p-4 shadow-sm bg-white rounded">
+            <div class="mb-3">
+              <label class="form-label">Nome</label>
+              <input type="text" class="form-control" placeholder="Seu nome">
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">E-mail</label>
+              <input type="email" class="form-control" placeholder="seuemail@exemplo.com">
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">Mensagem</label>
+              <textarea class="form-control" rows="4" placeholder="Digite sua mensagem"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-dark w-100">
+              Enviar Mensagem
+            </button>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- FOOTER PROFISSIONAL -->
+  <footer class="text-white py-5 bg-dark">
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-md-4 mb-4">
+          <h4 class="fw-bold">MinhaMarca</h4>
+          <p class="text-white-50">
+            Landing page moderna desenvolvida com HTML, CSS, JS e Bootstrap.
+          </p>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <h5 class="fw-bold">Navegação</h5>
+          <ul class="list-unstyled">
+            <li><a href="#sobre" class="text-white-50 text-decoration-none">Sobre</a></li>
+            <li><a href="#recursos" class="text-white-50 text-decoration-none">Recursos</a></li>
+            <li><a href="#time" class="text-white-50 text-decoration-none">Time</a></li>
+            <li><a href="#contato" class="text-white-50 text-decoration-none">Contato</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <h5 class="fw-bold">Siga-nos</h5>
+          <div class="d-flex gap-3 mt-2">
+            <a href="#" class="text-white fs-4"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="text-white fs-4"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-white fs-4"><i class="bi bi-twitter-x"></i></a>
+          </div>
+        </div>
+
+      </div>
+
+      <hr class="border-secondary">
+
+      <p class="text-center text-white-50 mb-0">
+        © 2025 MinhaMarca — Todos os direitos reservados.
+      </p>
+
+    </div>
   </footer>
+
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
   <!-- Custom JS -->
   <script src="./assets/js/script.js"></script>
+
 </body>
 </html>
